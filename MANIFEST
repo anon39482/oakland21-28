@@ -1,0 +1,40 @@
+# --------------------------------------------------------------------
+Makefile
+MANIFEST
+default.nix
+
+# Proofs
+proofs/Makefile
+proofs/Makefile.common
+proofs/_CoqProject
+proofs/lang/ocaml/.keep
+find:proofs:*.v
+
+# Compiler
+find:compiler/src:*.ml
+find:compiler/src:*.mli
+find:compiler/src:*.mll
+find:compiler/src:*.mly
+compiler/entry/jasminc.ml
+compiler/src/LICENSE.puf
+compiler/scripts/install-sh
+compiler/scripts/runtest
+compiler/Makefile
+compiler/jasmin.mlpack.in
+compiler/myocamlbuild.ml
+compiler/_tags
+compiler/opam
+compiler/CIL/.keep
+compiler/config/tests.config
+
+# EasyCrypt library
+eclib/Makefile
+eclib/tests.config
+find:eclib:*.ec
+
+# Tests
+find:compiler/examples:*.mil
+
+# Scripts
+scripts/install-sh
+scripts/distribution
